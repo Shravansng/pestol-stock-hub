@@ -25,7 +25,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter basename="/pestol-stock-hub">
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <AppLayout>
             <Routes>
               <Route path="/" element={<Dashboard />} />
